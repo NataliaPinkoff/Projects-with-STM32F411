@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Cortex Debug",
+      "cwd": "${workspaceRoot}",
+      "executable": "./build/helloblackpillSTM32F411CEUx.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "device": "STM32F411CE",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f4x.cfg"
+      ],
+      "svdFile": "STM32F411.svd",
+      "preLaunchTask": "build",
+      "runToMain": true
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/mmora/helloblackpill_STM32F411_vscode-main/helloblackpill_STM32F411_vscode-main/Core/Src",
+      "program": "c:/Users/mmora/helloblackpill_STM32F411_vscode-main/helloblackpill_STM32F411_vscode-main/Core/Src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/arm-gdb/tools/arm-gnu-toolchain-11.3.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

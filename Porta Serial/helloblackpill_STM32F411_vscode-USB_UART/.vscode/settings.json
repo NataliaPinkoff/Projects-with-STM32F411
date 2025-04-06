@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "C:/blackpill/helloblackpill_STM32F411_vscode-main/Drivers/CMSIS/DSP/Source/FastMathFunctions",
+    "files.associations": {
+        "cstdint": "cpp"
+    }
+}
